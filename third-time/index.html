@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lotto</title>
+<style>
+#NUMBERS { margin-top: 40vh; font-size: 5em; color: #fff; text-align: center; }
+b{ display: inline-block; width: 128px; height: 128px; border-radius: 64px; margin: 16px; background: #999; }
+</style>
+</head>
+
+<body>
+<div id="NUMBERS"><div>
+<!-- scripts -->
+<script>
+function genNumbers(){
+    var arr = [];
+    while (arr.length<6) {
+        var no = Math.round(Math.random()*45)+1;
+        if( arr.indexOf(no) === -1 ) arr.push(no);
+    }
+    return arr;
+}
+window.onload = function(){
+    var lottoNumbers = genNumbers();
+    // 3연속 증가 체크 is3increment()
+    while( checkLogic1(lottoNumbers) ) lottoNumbers=genNumbers();
+    //  10배수 중복 체크
+    while( checkLogic2(lottoNumbers) ) lottoNumbers=genNumbers();
+
+    var html_lotto ="";
+    for(var i=0; i<lottoNumbers.length; i++) html_lotto += '<b>'+ lottoNumbers[i] +'</b> '
+    document.getElementById("NUMBERS").innerHTML = html_lotto;
+}
+
+function checkLogic1(numbers) {
+    for(var i=0; i<numbers.length; i++){
+        var no = numbers[i];
+        if( numbers.indexOf(no+1)>=0 && numbers.indexOf(no+2)>=0 ) return true;
+    }
+    return false;
+}
+
+function checkLogic2(numbers) {
+    var decArea = [0, 0, 0, 0, 0];
+    for(var i=0; i<numbers.length; i++){
+        var area = Math.floor( numbers[i]/10 );
+        decArea[area]++;
+    }
+    return ( decArea[0]>2 || decArea[1]>2 || decArea[2]>2 || decArea[3]>2 || decArea[4]>2 );
+}
+</script>
+</body>
+
+</html>
