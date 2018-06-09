@@ -1,0 +1,30 @@
+<script>
+function genNumbers(){
+    var lottoNumbers = [];
+    while (lottoNumbers.length<6) {
+        var no = Math.round(Math.random()*45);
+        if( lottoNumbers.indexOf(no) === -1 ) lottoNumbers.push(no);
+    }
+    return lottoNumbers;
+}
+
+function checkLogic1(numbers) {
+    for(var i=0; i<numbers.length; i++){
+        var no = numbers[i];
+        if( numbers.indexOf(no+1)>=0 && numbers.indexOf(no+2)>=0 ) return true;
+    }
+    return false;
+}
+
+window.onload = function(){
+    var lottoNumbers = genNumbers();
+
+    // TODO 23,24,25 과 간이 연속으로 3개의 숫자가 나오지 않게 하자!
+    while( checkLogic1(lottoNumbers) ) lottoNumbers=genNumbers();
+
+    // TODO 11,15,17 과 같이 같은 10의 자리수에 3개가 나오지 않게 하자!
+    while( checkLogic2(lottoNumbers) ) lottoNumbers=genNumbers();
+
+    document.getElementById("NUMBERS").innerHTML = lottoNumbers.join(" ");
+}
+</script>

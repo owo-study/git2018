@@ -1,0 +1,12 @@
+<div id="NUMBERS"><div>
+
+<script>
+window.onload = function(){
+    var lottoNumbers = [];
+    while (lottoNumbers.length<6) {
+        var no = Math.round(Math.random()*45);
+        if( lottoNumbers.indexOf(no) === -1 ) lottoNumbers.push(no);
+    }
+    document.getElementById("NUMBERS").innerHTML = lottoNumbers.join(" ");
+}
+</script>
