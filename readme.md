@@ -12,7 +12,7 @@
 ### 참가자
 > ex> 이름or닉네임 (자기소개? or 깃허브주소) pull requset로 남겨주세요.
 
-1.
+1. 박기현 / github ID : 3dwebart
 2. AndrewJung
 3. 김재현 https://github.com/jayHy/
 4. 이준범(https://github.com/ellay06/study)_thankYou
