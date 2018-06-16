@@ -13,7 +13,7 @@
 > ex> 이름or닉네임 (자기소개? or 깃허브주소) pull requset로 남겨주세요.
 
 1.
-2.
+2. AndrewJung
 3.
 4.
 5.
