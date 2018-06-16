@@ -14,7 +14,7 @@
 
 1.
 2.
-3 김재현 https://github.com/jayHy/.
+3. 김재현 https://github.com/jayHy/
 4.
 5.
 6.
