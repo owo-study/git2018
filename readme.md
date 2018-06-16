@@ -13,7 +13,7 @@
 > ex> 이름or닉네임 (자기소개? or 깃허브주소) pull requset로 남겨주세요.
 
 1.
-2.
+2. AndrewJung
 3.
 4. 이준범(https://github.com/ellay06/study)_thankYou
 5. feel, understanding software, https://github.com/jongfeel/
