@@ -14,10 +14,7 @@
 
 1.
 2. AndrewJung
-3.
+3. 김재현 https://github.com/jayHy/
 4. 이준범(https://github.com/ellay06/study)_thankYou
 5. feel, understanding software, https://github.com/jongfeel/
 6. 이름:최수원, slack:cionman, github: https://github.com/cionman
-7.
-8.
-9.
