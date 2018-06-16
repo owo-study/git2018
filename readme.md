@@ -15,7 +15,7 @@
 1.
 2.
 3.
-4.
+4. 이준범(https://github.com/ellay06/study)_thankYou
 5. feel, understanding software, https://github.com/jongfeel/
 6. 이름:최수원, slack:cionman, github: https://github.com/cionman
 7.
