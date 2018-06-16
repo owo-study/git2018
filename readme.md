@@ -13,11 +13,8 @@
 > ex> 이름or닉네임 (자기소개? or 깃허브주소) pull requset로 남겨주세요.
 
 1.
-2.
+2. AndrewJung
 3. 김재현 https://github.com/jayHy/
-4.
-5.
-6.
-7.
-8.
-9.
+4. 이준범(https://github.com/ellay06/study)_thankYou
+5. feel, understanding software, https://github.com/jongfeel/
+6. 이름:최수원, slack:cionman, github: https://github.com/cionman
