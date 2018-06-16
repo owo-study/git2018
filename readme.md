@@ -17,7 +17,7 @@
 3.
 4.
 5.
-6.
+6. 이름:최수원, slack:cionman, github: https://github.com/cionman
 7.
 8.
 9.
